@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="../dist/output.css" rel="stylesheet" />
+  <title>Frontend Mentor | Notifications page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="mmin:flex mmin:items-center mmin:justify-center mmin:min-h-screen">
+
+  <div id="container" class="mmin:flex mmin:flex-col bg-white  mmin:scale-[80%]">
+    <div class="flex flex-col   mmin:w-[734px] bg-white  ">
+      <nav class="flex flex-row justify-between items-center p-4 mmin:pt-[10px]">
+        <h6 class=" ">Notifications
+          <span class="bg-bluee px-2 py-[1px] text-white rounded-md"> 3</span>
+        </h6>
+        <div class="text-grayBlu">Mark all as read</div>
+      </nav>
+
+<!-- New notifications sections -->
+    <div class="flex flex-col p-3 ">
+    <!-- Mark Webber -->
+      <div class="flex flex-row space-x-2 items-center p-4 bg-veryLigGrayBlue rounded-2xl mb-3">
+        <div class="relative ">
+            <img src="./assets/images/avatar-mark-webber.webp" alt="avatar-mark" class="rounded-full ">
+        </div>
+        <div id="MarkText" class="flex-1">
+            <span class="font-bold">Mark Webber</span> reacted to your recent post My first tournament today!  <span class="inline-block ml-1 w-3 h-3 bg-tomato rounded-full  "> </span>
+        </br>
+            <span class="text-grayBlu">1m ago</span>
+          </div>
+    </div>
+    <!-- Angela Gray -->
+    <div class="flex flex-row space-x-2 items-center p-4 bg-veryLigGrayBlue rounded-2xl mb-3">
+    <div class="relative ">
+          <img src="./assets/images/avatar-angela-gray.webp" alt="avatar-mark" class="rounded-full ">
+      </div>
+      <div id="MarkText" class="flex-1">
+          <span class="font-bold">Angela Gray</span>  Angela Gray followed you  <span class="inline-block ml-1 w-3 h-3 bg-tomato rounded-full  "> </span>
+      </br>
+          <span class="text-grayBlu">5m ago</span>
+        </div>
+    </div>
+    <!-- Jacob Thompson -->
+    <div class="flex flex-row space-x-2 items-center p-4 bg-veryLigGrayBlue rounded-2xl mb-3">
+      <div class="relative ">
+          <img src="./assets/images/avatar-jacob-thompson.webp" alt="avatar-mark" class="rounded-full ">
+      </div>
+      <div id="MarkText" class="flex-1">
+          <span class="font-bold">Jacob Thompson</span>  Jacob Thompson has joined your group <span class="font-bold text-bluee">Chess Club</span> <span class="inline-block ml-1 w-3 h-3 bg-tomato rounded-full  "> </span>
+      </br>
+          <span class="text-grayBlu">1 day ago</span>
+        </div>
+    </div>
+
+<!-- Private Message Section -->
+  <div class="flex flex-row space-x-2 items-start p-4 ">
+    <div class="relative ">
+        <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="avatar-mark" class="rounded-full ">
+    </div>
+    <div id="MarkText" class="flex-1">
+        <span class="font-bold">Rizky Hasanuddin</span> sent you a private message <span class="inline-block ml-1 w-3 h-3 bg-tomato rounded-full  "> </span>
+    </br>
+        <span class="text-grayBlu "> 5 days ago</span>
+        <div class=" border-separate border-2 mt-5 rounded-md p-2">
+          Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+          I'm already having lots of fun and improving my game.</div>
+      </div>
+  </div>
+
+<!-- Comment/Reaction/Action -->
+      <!-- Kimberly Smith -->
+      <div class="flex flex-row space-x-2 items-start p-4 mmin:justify-between">
+        <div class="inline-flex">
+          <div class="relative ssm:pr-5 mmin:pr-2">
+            <img src="./assets/images/avatar-kimberly-smith.webp" alt="avatar-mark" class="rounded-full ">
+        </div>
+        <div class="flex flex-col">
+          <span class="font-bold">Kimberly Smith</span> <span class="ssm:text-sm">commented on your picture </span>
+            <span class="text-grayBlu "> 1 week ago</span>
+        </div>
+
+        </div>
+        <div id="MarkText" class="flex ">
+            <div class="">
+              <img src="./assets/images/image-chess.webp" alt="avatar-mark" class="rounded-md ">
+          </div>
+          </div>
+      </div>
+      <!-- Nathan Peterson -->
+      <div class="flex flex-row space-x-2 items-start p-4 ">
+        <div class="relative ">
+            <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="avatar-mark" class="rounded-full ">
+        </div>
+        <div id="MarkText" class="flex-1">
+            <span class="font-bold">Nathan Peterson</span> reacted to your recent post
+             <span class="font-bold">5 end-game strategies to increase your win rate</span>
+        </br>
+            <span class="text-grayBlu "> 2 weeks ago</span>
+      </div>
+      </div>
+
+      <!-- Anna Kim -->
+      <div class="flex flex-row space-x-2 items-start p-4 ">
+        <div class="relative ">
+            <img src="./assets/images/avatar-anna-kim.webp" alt="avatar-mark" class="rounded-full ">
+        </div>
+        <div id="MarkText" class="flex-1">
+            <span class="font-bold">Anna Kim</span> left the group
+             <span class="font-bold text-bluee">Chess Club</span>
+        </br>
+            <span class="text-grayBlu "> 2 weeks ago</span>
+      </div>
+
+  </div>
+</div>
+
+</body>
+</html>
